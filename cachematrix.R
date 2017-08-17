@@ -15,7 +15,7 @@ setInverse <- function(inv) inverse <- inv
 getInverse <- function() inverse
         
 list(setMatrix = setMatrix, getMatrix = getMatrix, setInverse = setInverse, getInverse = getInverse)
-
+}
 
 ## Write a short comment describing this function
 
