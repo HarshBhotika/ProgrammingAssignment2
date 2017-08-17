@@ -6,6 +6,8 @@
 
 ## Write a short comment describing this function
 
+## Take matrix as the input
+
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
   set <- function(y) {
@@ -21,6 +23,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 ## Write a short comment describing this function
+## Compute the inverse of the input from makeCacheMatrix
 
 cacheSolve <- function(x, ...) {
   inv <- x$getinverse()
