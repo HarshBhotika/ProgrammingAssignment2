@@ -21,4 +21,13 @@ list(setMatrix = setMatrix, getMatrix = getMatrix, setInverse = setInverse, getI
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
+inverse <- x$getInverse
+if(!is.null(inverse)) {
+        message("Getting cached Matrix")
+        return(inverse)
+}
+Matrixdata <- x$getMatrix()
+        inverse <- solve(Matrixdata, ...)
+        x$setInverse(inverse)
+        inverse
 }
